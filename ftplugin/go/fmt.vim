@@ -12,7 +12,7 @@
 "       It tries to preserve cursor position and avoids
 "       replacing the buffer with stderr output.
 "
-if exists("b:did_ftplugin_go_fmt")
+if exists("g:did_ftplugin_go_fmt")
     finish
 endif
 
@@ -45,6 +45,6 @@ function! s:GoFormat()
     call winrestview(view)
 endfunction
 
-let b:did_ftplugin_go_fmt = 1
+let g:did_ftplugin_go_fmt = 1
 
 " vim:ts=4:sw=4:et
